@@ -14,7 +14,7 @@ Enhanced threat visibility with geolocation insights <b>(over 3000 attack attemp
 <h2>Technology Used</h2>
 
 - <b>Windows Server 2019</b> 
-- <b>SQL Server (Database)</b>
+- <b>SQL Server (SQL Database)</b>
 - <b>System Centre Configuration Manager / Microsoft Endpoint Configuration Manager</b>
 - <b>VirtualBox (Virtualisation Software)</b>
 
