@@ -7,7 +7,6 @@
 •Pipelined parsed data into Azure Sentinel for global attack data display (utilising a workbook).<br />
 
 
-
 <h2>Impact</h2>
 Enhanced threat visibility with geolocation insights <b>(over 3000 attack attempts)</b> , enabling effective monitoring of attacks (threat hunting), incident response, and escalation to stakeholders.
 
