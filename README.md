@@ -1,22 +1,33 @@
-# SCCM/MECM Server Management  
+# Azure Sentinel SIEM Honeypot Geolocation Dashboard  
 
 ## Description  
-- Set up an **Azure Workspace** with **vulnerable VMs**, **Log Analytics Workspace**, and **Sentinel**.  
-- Deployed a **PowerShell script** and **API** for **Windows Event Viewer metadata extraction** (IoC Enrichment).  
-- Configured **Azure Log Analytics Workspace** to **ingest and parse metadata**.  
-- Pipelined parsed data into **Azure Sentinel** for **global attack data display** using a **workbook**.  
+Set up an **SCCM/MECM Server** to facilitate **centralized system management** and **streamline software deployment** across my home network. Additionally, three separate systems were configured:  
 
-## Impact  
-Enhanced **threat visibility** with **geolocation insights** (**over 3,000 attack attempts**), enabling:  
-- **Effective monitoring of attacks** (threat hunting).  
-- **Improved incident response**.  
-- **Escalation of critical threats to stakeholders**.  
+- **DHCP/NAT Server** to manage **internet connectivity** and dynamically assign **IP addresses** to all devices.  
+- **Domain Controller Server** to administer **Active Directory**, ensuring **secure access** to network resources.  
+- **Windows 10 VM** as a **test system** for software deployment.  
 
 ## Technology Used  
-- **Windows Server 2019**  
-- **SQL Server (SQL Database)**  
-- **System Center Configuration Manager / Microsoft Endpoint Configuration Manager**  
-- **VirtualBox (Virtualization Software)**  
+- **Azure Sentinel (Cloud Platform)**  
+- **PowerShell (Scripting Language)**  
+- **Log Analytics Workspace (Log Storage)**  
+- **API Integration**  
+- **KQL (Query Language)**  
 
-## Diagram  
-![Diagram](https://raw.githubusercontent.com/JunedConnect/SCCM-MECM_Server_Management/main/images/SCCM%20Project.png)  
+## Demo  
+
+### **1. RDP Failed Attempts Query**
+This query retrieves **failed RDP login attempts**, allowing for **threat analysis and attack pattern identification**.
+
+<br>
+
+![RDP Failed Attempts Query](https://raw.githubusercontent.com/JunedConnect/Azure_Sentinel_SIEM_Honeypot_Geolocation_Dashboard/main/images/RDP%20Failed%20Attempts%20Query.PNG)  
+
+<br>
+
+### **2. RDP Failed Attempts Report**
+This report provides a **visual breakdown of failed login attempts**, offering insights into **attack frequency and geolocation data**.
+
+<br>
+
+![RDP Failed Attempts Report](https://raw.githubusercontent.com/JunedConnect/Azure_Sentinel_SIEM_Honeypot_Geolocation_Dashboard/main/images/RDP%20Failed%20Attempts%20Report.PNG)  
