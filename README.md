@@ -1,18 +1,26 @@
 # Azure Sentinel SIEM Honeypot Geolocation Dashboard  
 
-## Description  
-Set up an **SCCM/MECM Server** to facilitate **centralized system management** and **streamline software deployment** across my home network. Additionally, three separate systems were configured:  
+<br>
 
-- **DHCP/NAT Server** to manage **internet connectivity** and dynamically assign **IP addresses** to all devices.  
-- **Domain Controller Server** to administer **Active Directory**, ensuring **secure access** to network resources.  
-- **Windows 10 VM** as a **test system** for software deployment.  
+## Description  
+- Set up an **Azure Workspace** with **vulnerable VMs**, **Log Analytics Workspace**, and **Sentinel**.  
+- Deployed a **PowerShell script** and **API** for **Windows Event Viewer metadata extraction** (IoC Enrichment).  
+- Configured **Azure Log Analytics Workspace** to **ingest and parse metadata**.  
+- Pipelined parsed data into **Azure Sentinel** for **global attack data display** using a **workbook**.  
+
+## Impact  
+Enhanced **threat visibility** with **geolocation insights** (**over 3,000 attack attempts**), enabling:  
+- **Effective monitoring of attacks** (threat hunting).  
+- **Improved incident response**.  
+- **Escalation of critical threats to stakeholders**.  
 
 ## Technology Used  
 - **Azure Sentinel (Cloud Platform)**  
 - **PowerShell (Scripting Language)**  
 - **Log Analytics Workspace (Log Storage)**  
 - **API Integration**  
-- **KQL (Query Language)**  
+- **KQL (Query Language)**
+
 
 ## Demo  
 
